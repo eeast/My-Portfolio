@@ -4,77 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Easthope</h1>
+        <h1>Eric Easthope</h1>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
                 <li>Resume</li>
             </ul>
         </nav>
     </header>
-    <img class="banner-img" src="" alt="">
-    <section class="about-me">
+    <img id="banner-img" src="./assets/images/cherry blossom bkgnd2_1920x350.jpg" alt="Cherry blossoms from Busan, South Korea" width=100% >
+    <section id="about-me">
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quod ex corrupti reiciendis laboriosam fugiat sequi qui blanditiis exercitationem? Perspiciatis autem quos officiis commodi totam facere iusto corporis odio in.</p>
-    </section>
-    <section class="cards">
+        <div class="content-box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quod ex corrupti reiciendis laboriosam fugiat sequi qui blanditiis exercitationem? Perspiciatis autem quos officiis commodi totam facere iusto corporis odio in.</p>
+        </div>
+        </section>
+    <section id="work">
         <h2>Work</h2>
-        <div class="card-box">
-            <img src="" alt="">
-            <div class="card-text">
-                <h3 class="card-title"></h3>
-                <p class="card-lang"></p>
+        <div class = "content-box cards">
+            <div class="card-box">
+                <img src="./assets/images/grunge-red-work-process-square-260nw-1035090301.webp" alt="">
+                <div class="card-text">
+                    <h3 class="card-title">Card 1</h3>
+                    <p class="card-lang">Sample Text 1</p>
+                </div>
             </div>
-        </div>
-        <div class="card-box">
-            <img src="" alt="">
-            <div class="card-text">
-                <h3 class="card-title"></h3>
-                <p class="card-lang"></p>
+            <div class="card-box">
+                <img src="./assets/images/grunge-red-work-process-square-260nw-1035090301.webp" alt="">
+                <div class="card-text">
+                    <h3 class="card-title">Card 2</h3>
+                    <p class="card-lang">Sample Text 2</p>
+                </div>
             </div>
-        </div>
-        <div class="card-box">
-            <img src="" alt="">
-            <div class="card-text">
-                <h3 class="card-title"></h3>
-                <p class="card-lang"></p>
+            <div class="card-box">
+                <img src="./assets/images/grunge-red-work-process-square-260nw-1035090301.webp" alt="">
+                <div class="card-text">
+                    <h3 class="card-title">Card 3</h3>
+                    <p class="card-lang">Sample Text 3</p>
+                </div>
             </div>
-        </div>
-        <div class="card-box">
-            <img src="" alt="">
-            <div class="card-text">
-                <h3 class="card-title"></h3>
-                <p class="card-lang"></p>
+            <div class="card-box">
+                <img src="./assets/images/grunge-red-work-process-square-260nw-1035090301.webp" alt="">
+                <div class="card-text">
+                    <h3 class="card-title">Card 4</h3>
+                    <p class="card-lang">Sample Text 4</p>
+                </div>
             </div>
-        </div>
-        <div class="card-box">
-            <img src="" alt="">
-            <div class="card-text">
-                <h3 class="card-title"></h3>
-                <p class="card-lang"></p>
+            <div class="card-box">
+                <img src="./assets/images/grunge-red-work-process-square-260nw-1035090301.webp" alt="">
+                <div class="card-text">
+                    <h3 class="card-title">Card 5</h3>
+                    <p class="card-lang">Sample Text 5</p>
+                </div>
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact">
         <h2>Contact Me</h2>
-        <div class="contact-info">
-            <p>phone</p>
-            <p>email</p>
-            <p>github</p>
-            <p>twitter</p>
-            <p>spotify</p>
-        </div>
+        <ul class="content-box">
+            <li>phone</li>
+            <li>email</li>
+            <li>github</li>
+            <li>twitter</li>
+            <li>spotify</li>
+        </ul>
     </section>
     <footer>
-        <h2>C EE</h2>
+        <h2>&copy;2023 Eric Easthope</h2>
     </footer>
 </body>
 </html>
