@@ -1,25 +1,27 @@
+/* Color and margin defaults */
 :root {
-    --text-color: #f00;
-    --bgcolor01: #0f0;
-    --bgcolor02: #00f;
     --header-bkgnd: #35322a;
     --accent1: #3090e9;
-    --eggshell: #F0EAD6;
     --soft-white: #FBFAF5;
 
-    --small-margin: 3px;
+    --small-margin: 5px;
 }
 
+/* General settings for all objects */
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    /* Code for visualizing boxes, uncomment to outline all objects. */
     /* border-style: solid;
     border-width: 1px; 
     margin: 1px; */
 }
 
+/* Establishes the body as a flexbox container with each section aligned going down the page. Background color set to soft white */
 body {
     display: flex;
     flex-direction: column;
@@ -27,6 +29,7 @@ body {
     background-color: var(--soft-white);
 }
 
+/* Container settings for the header section. Flexbox established with a centered vertical alignment. */
 header {
     background-color: var(--header-bkgnd);
     display: flex;
@@ -34,6 +37,7 @@ header {
     align-items: center;
 }
 
+/* Header text settings, matching text color to header background and using a second color for background to create a cutout effect. */
 header h1 {
     color: var(--header-bkgnd);
     background-color: var(--accent1);
@@ -45,13 +49,13 @@ header h1 {
     text-align: center;
 }
 
+/* Reserving 75% of the header for nav section, opposite header text. */
 nav {
     flex: 3;
-    display: flex;
-    align-items: center;
     margin: 0px 20px;
 }
 
+/* Container settings for links, removes bullets on li, justify to the right of the page. */
 header ul {
     display: flex;
     flex: 1 0 auto;
@@ -59,6 +63,7 @@ header ul {
     justify-content: flex-end;
 }
 
+/* Formatting of page links to send user to various parts of the page. */
 header li {
     text-align: center;
     color: var(--accent1);
@@ -66,12 +71,14 @@ header li {
     border-bottom: solid 2px;
 }
 
+/* General container settings for all sections below the header. */
 section {
     display: flex;
     margin: var(--small-margin) 0px;
     padding: 10px;
 }
 
+/* General settings for all titles along section below the header. */
 section h2 {
     flex: 1;
     text-align: right;
@@ -84,15 +91,18 @@ section h2 {
     border-right: var(--accent1) solid var(--small-margin)
 }
 
+/* General settings for all content areas in the body. */
 section .content-box {
     flex: 4;
     display: flex;
 }
 
+/* Specifies wrapping for the cards section specifically. */
 .cards {
     flex-wrap: wrap;
 }
 
+/* Card boxes should fit evenly, two on a row on larger screens. */
 .card-box {
     flex: 1 0 45%;
     margin: 5px;
@@ -103,15 +113,23 @@ section .content-box {
     overflow: hidden;
 }
 
+/* Gives top row priority to the first project on the page. */
+#first-project {
+    flex: 1 0 95%;
+}
+
+/* Default blurred state for card images. */
 .card-box img {
     width: 100%;
     filter: blur(5px) grayscale(50%) brightness(90%);
 }
 
+/* Resets the filter to slightly blurred on hover. */
 .card-box img:hover {
     filter: blur(2px);
 }
 
+/* Container settings for the text box for each card. */
 .card-text {
     position: absolute;
     top: 50%;
@@ -121,28 +139,33 @@ section .content-box {
     padding: var(--small-margin);
 }
 
+/* Text settings for the card title. */
 .card-title {
     font-size: 150%;
     font-weight: 600;
     text-align: center;
 }
 
+/* Text settings for the description text. */
 .card-lang {
     font-size: 80%;
     text-align: center;
 }
 
+/* Container settings for the contact-me section specifically. */
 #contact {
     display: flex;
     justify-content: center;
 }
 
+/* Container settings for the ul object, removes bullets from list items. */
 #contact ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+/* Text settings for contact me links. */
 #contact li {
     color: var(--accent1);
     text-align: center;
@@ -151,12 +174,14 @@ section .content-box {
     font-weight: 600;
 }
 
+/* Container settings for footer */
 footer {
     display: flex;
     padding: 20px;
     width: 100%;
 }
 
+/* Text settings for footer text. */
 footer h2 {
     flex: 1;
     width: fit-content;
@@ -165,6 +190,14 @@ footer h2 {
     text-align: center;
 }
 
+/* Screen layout adjustments for smaller screen sizes. Does the following:
+    * Changes header container flex-direction from row to column.
+    * Changes header links from flex-end to center justified.
+    * Changes section container flex-directions from row to column.
+    * Changes section heading text from right justified to centered.
+    * Changes borders on section headings from right side to below text.
+    * Changes card container flex-direction from row to column.
+     */
 @media screen and (max-width: 760px) {
     header {
         flex-direction: column;
