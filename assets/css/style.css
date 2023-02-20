@@ -122,11 +122,12 @@ section .content-box {
 .card-box img {
     width: 100%;
     filter: blur(5px) grayscale(50%) brightness(90%);
+    object-fit: cover;
 }
 
 /* Resets the filter to slightly blurred on hover. */
 .card-box img:hover {
-    filter: blur(2px);
+    filter: none;
 }
 
 /* Container settings for the text box for each card. */
