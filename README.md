@@ -37,6 +37,8 @@ This website was a personal project built from scratch for showcasing various we
 
 Website deployed at eeast.github.io/CH2-MyPortfolio/
 
+![1676917217446](image/README/1676917217446.png)![1676917223022](image/README/1676917223022.png)![1676917226892](image/README/1676917226892.png)
+
 ## Credits
 
 The webpage styling was reset using the `reset.css` file from https://github.com/elad2412/the-new-css-reset
