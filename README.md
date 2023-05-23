@@ -35,7 +35,7 @@ This website was a personal project built from scratch for showcasing various we
 
 ## Demonstration
 
-Website deployed at eeast.github.io/CH2-MyPortfolio/
+Website deployed at [eeast.github.io/My-Portfolio/](https://eeast.github.io/My-Portfolio/)
 
 ![1676917217446](image/README/1676917217446.png)![1676917223022](image/README/1676917223022.png)![1676917226892](image/README/1676917226892.png)
 
